@@ -128,8 +128,8 @@ body {
   color: var(--address-color);
 }
 
-.menu-site:hover .contacts,
-.menu-site:focus .contacts {
+.menu-site:hover .message,
+.menu-site:focus .message {
   fill: var(--address-color);
 } 
 
@@ -158,26 +158,32 @@ body {
   margin-right: 30px;
 }
 
-.contact-phone-number:hover .contacts,
-.contact-phone-number:focus .contacts {
+.contact-phone-number:hover .smartphone,
+.contact-phone-number:focus .smartphone{
   fill: var(--address-color);
 }
+
 
 .contacts {
   display: flex;
   margin-left: auto;
 }
  
-.contacts-image {
+.message,
+.smartphone {
   width: 16px;
   height: 12px;
   margin-right: 10px;
+  fill: var(--menu-site-color);
 }
 
 
 /*--hero--*/
 
 .hero.section {
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   background-color: var(--hero-address-color);
   padding-top: 200px;
@@ -231,12 +237,10 @@ body {
 
 .image-icon {
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 270px;
   height: 120px;
-  padding-left: 102px;
-  padding-right: 102px;
-  padding-top: 25px;
-  padding-bottom: 25px;
   border-radius: 4px;
   background-color: var(--image-color);
 }
@@ -363,8 +367,6 @@ body {
   justify-content: center;
   gap: 10px;
   margin-bottom: 30px;
-  margin-left: 32px;
-  margin-right: 32px;
 }
 
 .social-list-link {
@@ -423,10 +425,6 @@ body {
   justify-content: center;
   width: 170px;
   height: 92px;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 16px;
-  padding-bottom: 16px;
   border: 1px solid var(--social-list-color);
   border-radius: 4px;
 }
@@ -458,6 +456,10 @@ body {
 .address-menu {
   display: flex;
   align-items: baseline;
+}
+
+.address-container {
+  margin-right: 70px;
 }
 
 .address-contact {
@@ -502,7 +504,7 @@ body {
 .address-link {
   font-family: var(--primary-font);
   font-size: 14px;
-  line-height: 1.14px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }

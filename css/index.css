@@ -34,8 +34,10 @@ ul {
 .menu-link,
 .menu-site,
 .logo,
+.address-logo,
 .site-nav,
 .work-list,
+.work-container,
 .contact-links,
 .mail-links,
 .phone-links,
@@ -192,9 +194,15 @@ body {
   margin-top: 50px;
 }
 
-.work-item-container {
+.work-container {
+  display: block;
+}
+
+.work-container:hover,
+.work-container:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 6px 4px rgba(0, 0, 0, 0.16);
 }
+
 
 .container-work {
   padding-top: 20px;
@@ -230,7 +238,10 @@ body {
 }
 
 .user-item {
+  display: block;
   width: 370px;
+  max-width: 100%;
+  height: auto;
 }
 
 /*--address--*/
@@ -242,7 +253,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
-   
+
 .contact-links {
   font-family: var(--primary-font);
   font-weight: 400;
